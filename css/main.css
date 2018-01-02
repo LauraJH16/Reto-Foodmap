@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffd901, #fd430a);
+  height: 100vh;
+}
+
+#splash h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 60%;
+}
+
+.row h1 {
+  font-weight: 600;
+}
+
+#map {
+  height: 200px;
+  margin-top: 20px;
+}
+
+#home {
+  display: none;
+}
+
+#home .line {
+  height: 2px;
+  background: #000;
+  display: inline-block;
+  margin-top: 18px;
+  width: 72%;
+}
+
+a i {
+  color: #000;
+}
+
+a {
+  padding: 10px 14px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.a-first {
+  float: left;
+}
+
+.place-rest {
+  width: 100%;
+  height: 8em;
+  margin: 10px 0;
+}
+
+.modal-footer .btn-primary {
+  background: #f3a600;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.content-modal-one,
+.content-modal-two {
+  display: inline-block;
+  text-align: center;
+  width: 46%;
+}
+
+.local-modal {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.name-modal {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.title-p {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.district-modal,
+.price-modal,
+.city-modal,
+.country-modal {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.modal-content {
+  margin-top: 20%;
+}
+
+.name-rest {
+  position: absolute;
+  z-index: 5;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+  font-size: 21px;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-top: 45px;
+  display: none;
+  background: rgb(255, 147, 23);
+  width: 80%;
+  text-align: center;
+}
+
+.rest-div:hover img {
+  opacity: .5;
+}
+
+.rest-div:hover p {
+  display: block
+}

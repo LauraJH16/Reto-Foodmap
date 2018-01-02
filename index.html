@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foodmap</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div id="splash">
+    <h1 class="text-center">Foodmap</h1>
+  </div>
+  <div id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1>Foodmap</h1>
+          <a href="#" class="a-first">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+          </a>
+          <div class="line center-block"></div>
+          <a href="#">
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+          </a>
+          <div id="map"></div>
+          <h2>Comida cerca de ti</h2>
+          <form class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control input-rest" id="exampleInputAmount" placeholder="Nombre, país o distrito">
+                <div class="input-group-addon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="text-center modal-title name-modal" id="myModalLabel"></h4>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <img class="center-block local-modal" alt="">
+                </div>
+                <div class="content-modal-one">
+                  <p class="title-p">DISTRITO</p>
+                  <p class="district-modal"></p>
+                  <p class="title-p">CIUDAD</p>
+                  <p class="city-modal"></p>
+                </div>
+                <div class="content-modal-two">
+                  <P class="title-p">GASTO POR PERSONA</P>
+                  <p class="price-modal"></p>
+                  <P class="title-p">PAIS</P>
+                  <p class="country-modal"></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="center-block btn btn-primary" data-dismiss="modal">Pedir Ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMpAv61bUgvy2FB87fHj109QKE0T9Roog&callback=initMap"></script>
+  <script src="js/map.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
