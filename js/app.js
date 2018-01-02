@@ -47,4 +47,11 @@ $(document).ready(function() {
       }
     }
   }
+
+  $('.modal-footer .btn').click(clearInput);
+
+  function clearInput() {
+    alert('LISTO!!');
+    location.reload();
+  }
 });
